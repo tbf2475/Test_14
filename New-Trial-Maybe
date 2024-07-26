@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Analysis Data</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+</head>
+<body>
+   <nav><h1>Health Analysis Census</h1>
+<ul>
+  <li><a href="./travel_recommendation.html" id="home">Home </a></li>
+  <li><a href="./travel_contactus.html" id="contact">Contact Us </a></li>
+  <li><input type="text" id="countriesInput" placeholder="Enter a Destination">  </li>
+  <li><button id='btnSearch'>Search</button>
+  </li>
+
+</ul>
+</nav>
+<div class="container">
+<div class="analysisForm">
+<h1>Healthcare Data Analysis</h1>
+<div>
+<label for="name">Name:</label>
+<input type="text" id="name">
+</div>
+<div>
+<label>Type of Destination:</label>
+<label for="cities">City</label>
+<input type="radio" name="cities" id="cities" value="cities">
+<label for="beaches">Beach</label>
+<input type="radio" name="beaches" id="beach" value="beaches">
+<label for ="temples">Temple</label>
+<input type="radio" name="temples" id="temples" value="temples"
+</div>
+<div>
+<label for="age">Age:</label>
+<input type="number" id="age">
+</div>
+<div>
+<label for="countries">Destinations:</label>
+<select id="countries">
+    <option value="">Select destination</option>
+    <option value="Angkor_wat_Cambodia">Angkor wat Angkor wat Cambodia</option>
+    <option value="Bora_Bora_Indonesia">Bora Bora Indonesia</option>
+    <option value="Copacabana_Beach_Brazil">Copacabana Beach Brazil</option>
+    <option value="Kyoto_Japan">Kyoto Japan</option>
+    <option value="Rio_de_janeiro_Brazil">Rio de Janeiro Brazil</option>
+    <option value="Sao_Paulo_Brazil">Sao Paulo Brazil</option>
+    <option value="Melbourne_Australia">Melbourne Australia</option>
+    <option value="Sydney_Australia">Sydney Australia</option>
+    <option value="Taj_Mahal_India">Taj Mahal India</option>
+    <option value="Tokyo_Japan">Tokyo Japan</option>
+</select>
+</div>
+<button id="addDestination">Add Destination</button>
+<h2>Analysis Report</h2>
+<div id="report"></div>
+</div>
+<div class="searchCountries">
+    <div id="result"></div>
+</div>
+</div>
+<script src="./travel_recommendations.js"></script>
+</body>
+</html>
